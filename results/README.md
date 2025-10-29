@@ -1,13 +1,24 @@
 # Findings
 
-This folder contains our findings from this database project.
+## Dataset Stats
 
-The findings include details about the library patrons. For example, how many from the age range 0 to 9 years used the library, how many of them were repeat patrons (can be found from total checkouts), how many renewed (can be found from total renewals).
+Some statistics on the data that is imported:
+- 437,115 total patrons
+- 62% Adults, 13% Kids, 11% Seniors, 9% Teens
+- 84.5% within San Francisco
+- Main Library has 33% of all patrons (143k)
+- Most patrons are age 25-44
 
 # Performance Metrics
 
-This folder also contains the performance values.
-
 Did we store the data in our database appropriately?
 
-This is meant to be a more manageable database with multiple tables. We are not simply dumping the whole Excel sheet into one giant MySQL table.
+Data is stored in multiple tables. 
+
+## Performance Results
+- Count all patrons: 76.034792ms (1 rows)
+- Count by patron type: 146.570542ms (18 rows)
+- Count by age range: 153.517209ms (11 rows)
+- Count by library: 144.621667ms (30 rows)
+- Find SF patrons: 54.954625ms (1 rows)
+- Active in 2023: 52.88925ms (1 rows)
